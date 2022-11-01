@@ -9,6 +9,7 @@ set(CMAKE_RELEASE_POSTFIX "" CACHE STRING "Add postfix to target for Release bui
 set(CMAKE_DEBUG_POSTFIX "d" CACHE STRING "Add postfix to target for Debug build.")
 set(CMAKE_RELWITHDEBINFO_POSTFIX "rd" CACHE STRING "Add postfix to target for RelWithDebInfo build.")
 set(CMAKE_MINSIZEREL_POSTFIX "s" CACHE STRING "Add postfix to target for MinSizeRel build")
+add_compile_options(-fPIC)
 
 set(headers
 	include/nmeaparse/Event.h
